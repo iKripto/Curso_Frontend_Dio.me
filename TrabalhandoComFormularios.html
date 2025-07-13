@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <!-- Formulários são basicamente campos onde o usuário vai inserir informação. 
+    Tag Form
+    method = É a forma como o site vai fazer a requisição. O GET exibe tudo na aba de pesquisa, por isso é inseguro par senhas. 
+    o POST é mais seguro, mas mais complicado. 
+    action é o endereço do servidor onde vai fazer a requisição. 
+    target=_blank abre uma nova aba.
+    onsubmit = Todo "on" em html/javascript é um evento. Nesse caso, ao submitar, faz algo. -->
+     
+    <form name="sign up" target="_blank" onsubmit="alert('Enviado!')" method="get" action="#" > 
+        este é o formulário!<br>
+        <!-- O formulário não faz nada por enquanto, precisamos trabalhar com as classes filhas de form, conforme abaixo. -->
+        usuário: <input type="text" name="user"> <br> <!-- aqui, o input do tipo text recebe textos. -->
+        idade: <input type="number" name="age"> <br> <!-- aqui, o input do tipo number recebe apenas numeros. -->
+        senha: <input type="password" name="pass"> <br> <!-- aqui, o input do tipo password mostra apenas bolinhas. -->
+        <button type="submit">enviar</button>
+    </form>
+</body>
+</html>
